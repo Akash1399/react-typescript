@@ -8,8 +8,8 @@ type personsListProps = {
 function PersonList(props: personsListProps) {
   return (
     <div>
-      {props.personsList.map((person) => (
-        <h2>
+      {props.personsList.map((person, index) => (
+        <h2 key={index}>
           {person.firstName} {person.lastName}
         </h2>
       ))}
