@@ -3,6 +3,7 @@ import "./App.css";
 // import OscarSecond from "./components/OscarSecond";
 // import Status from './components/Status';
 import Greet from "./components/Greet";
+import User from "./components/state/User";
 // import Button from "./components/Button";
 // import Input from "./components/Input";
 // import PersonList from './components/PersonList';
@@ -25,7 +26,8 @@ function App() {
   return (
     <div className="App">
       <header className="App-header">
-        <Greet name="Akash" isLoggedIn={true} />
+        {/* <Greet name="Akash" isLoggedIn={true} /> */}
+        <User />
         {/* <PersonList personsList={personsList}/> */}
         {/* ADVANCE PROPS */}
         {/* <Status status='error'/> */}
